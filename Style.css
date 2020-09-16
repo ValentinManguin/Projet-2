@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.ttf') format("opentype");
+    font-weight: 400;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #FFF;
+        color: #000;
+        font-family: "Raleway";
+    }
+
+    .topbar {
+        background: #FFF;
+        
+    }
+
+    .topbar a {
+        text-decoration: none;
+    }
+        
+    .topbar nav {
+        text-align: right;
+        word-spacing: 60px;
+    }
+
+    .topbar nav a {
+
+    }
+
+    .topbar nav a.active{
+         color: #0065FC;    
+    }
+
+    .topbar nav a.inscription {
+        color: #0065FC;
+    }
+
