@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Regular.ttf') format("opentype");
-    font-weight: 400;
-    }
-
-    * {
+  * {
         box-sizing: border-box;
     }
 
@@ -16,6 +10,9 @@
 
     .topbar {
         background: #FFF;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-left: 30px;
         
     }
 
@@ -28,15 +25,366 @@
         word-spacing: 60px;
     }
 
-    .topbar nav a {
-
-    }
-
     .topbar nav a.active{
-         color: #0065FC;    
+        border-top: 2px solid #0065FC;
+        color: #0065FC;    
+        padding-top: 35px;
+        
     }
 
     .topbar nav a.inscription {
         color: #0065FC;
+        font-weight: bold;
     }
 
+    .topbar nav a.Activités {
+        color: black;
+    }
+
+    .Reservia {
+        
+        padding-bottom: 20px;
+        
+    }
+
+    h1 {
+       font-size: 23px;
+        
+    }
+    
+
+    .search {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        height: 45px;
+       width: 50px;
+       font-size: 18px; 
+       background-color: #F2F2F2;
+       padding-left: 10px;
+       padding-right: 10px;
+       border-top-left-radius: 1em;
+       border-bottom-left-radius: 1em;  
+    }   
+
+    
+   h5 {
+       padding-left: 45px;
+       padding-right: 105px;
+       
+   }
+
+    .button {
+        background-color: #0065FC;
+        color: white;
+        height: 45px;
+        width: 110px;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+        border: none;
+        font-family: 'Raleway', Arial, Sans Serif;
+        font-size: 14px;
+        font-weight: bold;
+           }
+
+    .filtres {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 30px;
+        
+    }
+
+    .Filtre-icone {
+       color: #0065FC;
+       background-color: #DEEBFF;
+     
+       border-radius: 30px;
+       height: 30px;
+       width: 30px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+    }
+    
+    .Filtre {
+        
+       
+        border: #F2F2F2 solid;      
+        border-radius: 30px;
+        height: 30px;
+        width: auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        
+    }
+
+    .Filtre p {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: bold;
+    }
+
+    
+
+    
+
+    .info {
+       color: #0065FC;
+       font-size: 15px;
+       
+       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: #F2F2F2 solid;
+       border-radius: 20px;
+       height: 30px;
+       width: 30px;
+       
+       
+    }
+
+    .info2 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+       font-size: 15px;
+       margin-top: 20px;
+       margin-bottom: 40px;
+       
+    }
+
+    .hébergements {
+       margin-left: 30px;
+       background-color: #F2F2F2;
+       border-radius: 30px;
+       height: 700px;
+       width: 1150px;
+       
+       
+    }
+
+    .titre1 {
+        padding-left: 80px;
+        padding-top: 40px;
+        font-weight: bold;
+    }
+
+     ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+        
+    }
+
+    .Auberge {
+        width: 300px;
+        height: 170px;
+        background-image: url(hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+        background-size: 300px;
+        border-top-right-radius:  30px;
+        border-top-left-radius:   30px;
+        
+        
+    }
+
+    .Port{
+        width: 300px;
+        height: 170px;
+        background-image: url(hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+        background-size: 300px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        
+        
+    }
+
+    .Mouettes {
+        width: 300px;
+        height: 170px;
+        background-image: url(hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+        background-size: 300px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        
+    }
+
+    .Mer {
+        width: 300px;
+        height: 170px;
+        background-image: url(hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+        background-size: 300px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        
+    }
+
+    .Panier {
+        width: 300px;
+        height: 170px;
+        background-image: url(hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+        background-size: 300px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        
+    }
+
+    .Amina {
+        width: 300px;
+        height: 170px;
+        background-image: url(hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+        background-size: 300px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        
+    }
+
+    .afficher {
+        font-weight: bold;
+        padding-left: 80px;
+        padding-top: 30px;
+    }
+
+  aside {
+      
+    position: absolute;
+    top: 440px;
+    right: 30px;
+    border-radius: 30px;
+    height: 700px;
+    width: 500px;
+    background-color: #F2F2F2;
+    list-style: none;
+    
+   }
+
+  .titre2 {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
+  }
+
+  .Soleil {
+      background-image: url(hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+      width: 150px;
+      height: 170px;
+      background-size: 300px;
+      border-top-right-radius: 30px;
+       border-top-left-radius: 30px;
+  }
+
+  .Eau {
+      background-image: url(hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+      width: 150px;
+      height: 170px;
+      background-size: 300px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+  }
+
+  .Bleu {
+      background-image: url(hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+      width: 150px;
+      height: 170px;
+      background-size: 300px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+  }
+
+  .titre3 {
+      font-weight: bold;
+      padding-left: 30px;
+  }
+
+.Vieux {
+    background-image: url(activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    width: 300px;
+      height: 400px;
+      background-size: 600px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+}
+
+.Pomègues {
+    background-image: url(activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    width: 300px;
+      height: 170px;
+      background-size: 300px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+}
+
+.Frioul {
+    background-image: url(activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    width: 300px;
+      height: 170px;
+      background-size: 300px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+}
+
+.Calanques {
+    background-image: url(activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    width: 300px;
+      height: 400px;
+      background-size: 600px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+}
+
+.Dame {
+    background-image: url(activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    width: 300px;
+      height: 170px;
+      background-size: 300px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+} 
+
+.Longchamp {
+    background-image: url(activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    width: 300px;
+      height: 170px;
+      background-size: 300px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+}
+
+footer {
+    background-color: #F2F2F2;
+       border: 30px;
+       height: 200px;
+       width: 1720px;
+       list-style: none;
+       display: flex;
+       justify-content: space-between;
+       
+       
+       
+}
+
+footer p {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+		width: auto;
+		margin: 0;
+		padding: 0;
+    }
+    header {
+        max-width: 100%;
+    }
+}
+
+    
