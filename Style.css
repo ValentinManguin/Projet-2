@@ -6,7 +6,13 @@
         background: #FFF;
         color: #000;
         font-family: "Raleway";
+        max-width: 1440px;
+        margin: auto;
     }
+
+    header,main,footer {
+    width: 100%;
+}
 
     .topbar {
         background: #FFF;
@@ -28,7 +34,7 @@
     .topbar nav a.active{
         border-top: 2px solid #0065FC;
         color: #0065FC;    
-        padding-top: 35px;
+        padding-top: 27px;
         
     }
 
@@ -159,14 +165,30 @@
        
     }
 
-    .hébergements {
+    .hebergements {
        margin-left: 30px;
        background-color: #F2F2F2;
        border-radius: 30px;
        height: 700px;
-       width: 1150px;
+       width: 65%;
        
        
+    }
+
+    .hebergements li {
+        background-color: #FFF;
+        border-radius: 30px;
+        width: 26%;
+        padding: 3px;
+    }
+
+    .hebergements figure {
+        height: 100px;
+        width: 100%;
+        border-top-right-radius:  30px;
+        border-top-left-radius:   30px;
+        margin: 0;
+        background-size: cover;
     }
 
     .titre1 {
@@ -175,75 +197,47 @@
         font-weight: bold;
     }
 
-     ul {
+     main ul {
         list-style: none;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
+        flex-wrap: wrap;
         
         
     }
 
-    .Auberge {
-        width: 300px;
-        height: 170px;
+    .Auberge figure {
+        
         background-image: url(hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-        background-size: 300px;
-        border-top-right-radius:  30px;
-        border-top-left-radius:   30px;
-        
-        
-    }
+        }
 
-    .Port{
-        width: 300px;
-        height: 170px;
+    .Port figure {
+       
         background-image: url(hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-        background-size: 300px;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        
+  
         
     }
 
-    .Mouettes {
-        width: 300px;
-        height: 170px;
+    .Mouettes figure {
+        
         background-image: url(hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-        background-size: 300px;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        
+   
     }
 
-    .Mer {
-        width: 300px;
-        height: 170px;
+    .Mer figure {
+       
         background-image: url(hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-        background-size: 300px;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        
     }
 
-    .Panier {
-        width: 300px;
-        height: 170px;
-        background-image: url(hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-        background-size: 300px;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        
+    .Panier figure {
+      
+        background-image: url(hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);  
     }
 
-    .Amina {
-        width: 300px;
-        height: 170px;
+    .Amina figure {
+        
         background-image: url(hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-        background-size: 300px;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        
     }
 
     .afficher {
@@ -259,12 +253,32 @@
     right: 30px;
     border-radius: 30px;
     height: 700px;
-    width: 500px;
+    width: 30%;
     background-color: #F2F2F2;
     list-style: none;
     
    }
 
+   aside li {
+    background-color: #FFF;
+    border-radius: 30px;
+    width: 26%;
+    padding: 3px;
+    
+   }
+
+   aside figure {
+    height: 100px;
+    width: 100%;
+    border-bottom-left-radius:  30px;
+    border-top-left-radius:   30px;
+    margin: 0;
+    background-size: cover;
+    
+
+   }
+
+   
   .titre2 {
       font-weight: bold;
       display: flex;
@@ -272,119 +286,126 @@
       padding-top: 20px;
   }
 
-  .Soleil {
+  .Soleil figure {
       background-image: url(hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-      width: 150px;
-      height: 170px;
-      background-size: 300px;
-      border-top-right-radius: 30px;
-       border-top-left-radius: 30px;
+      
   }
 
-  .Eau {
+  .Eau figure{
       background-image: url(hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-      width: 150px;
-      height: 170px;
-      background-size: 300px;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
+     
   }
 
-  .Bleu {
+  .Bleu figure{
       background-image: url(hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-      width: 150px;
-      height: 170px;
-      background-size: 300px;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
+      
   }
+
+
+.fas {
+   color: #0065FC;
+}
+
 
   .titre3 {
       font-weight: bold;
       padding-left: 30px;
   }
 
-.Vieux {
+  .Acti {
+      font-weight: bold;
+  }
+
+  .Acti li {
+    background-color: #FFF;
+    border-radius: 30px;
+    width: 26%;
+    padding: 3px;
+  }
+
+  .Acti figure {
+    height: 100px;
+    width: 100%;
+    border-top-right-radius:  30px;
+    border-top-left-radius:   30px;
+    margin: 0;
+    background-size: cover;
+  }
+
+.Vieux figure{
     background-image: url(activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    width: 300px;
-      height: 400px;
-      background-size: 600px;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
+    height: 500px;
+  
 }
 
-.Pomègues {
+.Pomègues figure{
     background-image: url(activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    width: 300px;
-      height: 170px;
-      background-size: 300px;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
+ height: 200px;
 }
 
-.Frioul {
+.Frioul figure{
     background-image: url(activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-    width: 300px;
-      height: 170px;
-      background-size: 300px;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
+      height: 200px;
 }
 
-.Calanques {
+.Calanques figure {
     background-image: url(activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    width: 300px;
-      height: 400px;
-      background-size: 600px;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
+    height: 500px;
 }
 
-.Dame {
+.Dame figure{
     background-image: url(activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    width: 300px;
-      height: 170px;
-      background-size: 300px;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
+    height: 200px;
 } 
 
-.Longchamp {
+.Longchamp figure{
     background-image: url(activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-    width: 300px;
-      height: 170px;
-      background-size: 300px;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
+ height: 200px;
 }
 
 footer {
     background-color: #F2F2F2;
        border: 30px;
        height: 200px;
-       width: 1720px;
        list-style: none;
        display: flex;
-       justify-content: space-between;
-       
-       
-       
+       justify-content: flex-start;      
+}
+
+footer ul {
+    margin-right: 150px;
+    list-style: none;
 }
 
 footer p {
     font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
-    body {
-		width: auto;
-		margin: 0;
-		padding: 0;
-    }
-    header {
-        max-width: 100%;
-    }
+ 
+
+
+ .filtres {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ 
+    main {
+     flex-direction: column;
+ }
+
+ section, aside {
+    
+     flex-direction: column;
+ }
+
+ footer {
+     flex-direction: column;
+ }
+
+  
 }
 
     
