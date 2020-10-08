@@ -299,8 +299,8 @@ main {
    aside figure {
     height: 100%;
     width: 100px;
-    border-bottom-left-radius:  30px;
-    border-top-left-radius:   30px;
+    border-bottom-left-radius:  20px;
+    border-top-left-radius:   20px;
     margin: 0;
     background-size: cover;
     
@@ -395,7 +395,6 @@ main {
 footer {
     background-color: #F2F2F2;
        border: 30px;
-       
        list-style: none;
        display: flex;
        justify-content: flex-start;      
