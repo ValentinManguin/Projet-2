@@ -71,10 +71,7 @@ main {
         justify-content: flex-start;
         align-items: center;
         height: 45px;
-    
        font-size: 18px; 
-       
-      
        border-radius: 1em;
        overflow: hidden;
        max-width: 400px;
@@ -106,7 +103,7 @@ main {
         border-top-right-radius: 1em;
         border-bottom-right-radius: 1em;
         border: none;
-        font-family: 'Raleway', Arial, Sans Serif;
+        font-family: 'Raleway', Arial, 'Sans Serif';
         font-size: 14px;
         font-weight: bold;
            }
@@ -121,9 +118,9 @@ main {
     }
 
     .Filtre-icone {
-       color: #0065FC;
+       position: relative;
+        color: #0065FC;
        background-color: #DEEBFF;
-     
        border-radius: 30px;
        height: 30px;
        width: 30px;
@@ -186,10 +183,7 @@ main {
        
        background-color: #F2F2F2;
        border-radius: 30px;
-       
-       width: 65%;
-       
-       
+       width: 65%;       
     }
 
     .hebergements li {
@@ -197,6 +191,18 @@ main {
         border-radius: 30px;
         width: 26%;
         padding: 3px;
+        padding-bottom: 7px;
+        margin-bottom: 15px;
+        
+    }
+
+    .hebergements p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hebergements i {
+        margin: 1px;
     }
 
     .hebergements figure {
@@ -206,6 +212,10 @@ main {
         border-top-left-radius:   30px;
         margin: 0;
         background-size: cover;
+    }
+
+    figure {
+        background-position: center;
     }
 
     .titre1 {
@@ -294,6 +304,7 @@ main {
        margin-bottom: 8px;
    }
 
+   
 
 
    aside figure {
@@ -343,33 +354,56 @@ main {
 
   .Acti {
       font-weight: bold;
+      width: 80%;
   }
 
   .Acti li {
     background-color: #FFF;
     border-radius: 30px;
-    width: 26%;
+    width: 22%;
     padding: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+
   }
 
   .Acti figure {
-    height: 100px;
+  
     width: 100%;
     border-top-right-radius:  30px;
     border-top-left-radius:   30px;
     margin: 0;
     background-size: cover;
+    flex-grow: 2
+    ;
   }
 
+  .Acti ul {
+      justify-content: flex-start;
+      width: 80%;
+      flex-direction: column;
+      max-height: 700px;
+  }
+.Vieux,.Calanques {
+    height: 100%;
+}
+.Pomègues, .Longchamp {
+    height: 60%;
+}
+.Frioul, .Dame {
+    height: 60%;
+}
 .Vieux figure{
     background-image: url(activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    height: 500px;
+    height: 400px;
   
 }
 
 .Pomègues figure{
     background-image: url(activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
  height: 200px;
+ 
 }
 
 .Frioul figure{
@@ -379,7 +413,7 @@ main {
 
 .Calanques figure {
     background-image: url(activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    height: 500px;
+    height: 400px;
 }
 
 .Dame figure{
@@ -432,15 +466,22 @@ padding: 10px;
  section, aside, .hebergements {
     
      flex-direction: column;
-     width: 90%;
+     width: 100%;
+     margin-bottom: 35px;
+     border-radius: 0px;
  }
 
  .Acti {
      order: 3;
+     
  }
 
  .hebergements {
      order: 2;
+ }
+
+ .hebergements li {
+     width: 80%;
  }
  
  aside {
