@@ -78,21 +78,34 @@ main {
        
     }   
 
-    .search i {
+    .search > i {
         background-color: #F2F2F2;
         height: 100%;
         width: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
+        color: black;
+    }
+
+    .search button i {
+        display: none;
     }
 
     
-   h5 {
+   .search input {
        padding-left: 20px;
        padding-right: 20px;
        flex-grow: 2;
-       
+       margin: 0;
+       height: 45px;
+       display: flex;
+       align-items: center;
+       border-color: rgb(207, 207, 207);
+       border-style: solid;
+       border-width: 1px 0;
+       font-weight: bold;
+       font-family: 'Raleway', Arial, 'Sans Serif';
    }
 
     .button {
@@ -115,18 +128,26 @@ main {
         font-weight: bold;
         margin-top: 30px;
         
+        
     }
+
+    .Filtre:hover {
+       background-color: #DEEBFF;
+      
+    }
+    
 
     .Filtre-icone {
        position: relative;
         color: #0065FC;
        background-color: #DEEBFF;
-       border-radius: 30px;
-       height: 30px;
-       width: 30px;
+       border-radius: 45px;
+       height: 45px;
+       width: 45px;
        display: flex;
        justify-content: center;
        align-items: center;
+       left: -3px;
        
     }
     
@@ -134,19 +155,21 @@ main {
         
        
         border: #F2F2F2 solid;      
-        border-radius: 30px;
-        height: 30px;
+        border-radius: 45px;
+        height: 45px;
         width: auto;
         display: flex;
         justify-content: start;
         align-items: center;
+        margin: 7px;
+        
         
     }
 
     .Filtre p {
-        padding-left: 5px;
-        padding-right: 5px;
         font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     
@@ -196,9 +219,11 @@ main {
         
     }
 
+  
     .hebergements p {
         margin-top: 5px;
         margin-bottom: 5px;
+        
     }
 
     .hebergements i {
@@ -212,6 +237,18 @@ main {
         border-top-left-radius:   30px;
         margin: 0;
         background-size: cover;
+    }
+    
+    .hebergements p {
+        margin-left: 15px;
+    }
+
+    .hebergements li .fas {
+        margin-left: 15px;
+    }
+
+    .hebergements li .fas ~ .fas {
+        margin-left: 0px;
     }
 
     figure {
@@ -283,6 +320,15 @@ main {
     
    }
 
+   aside li .fas {
+       margin-top: 20px;
+   } 
+
+   aside li div {
+    margin-left: 15px;
+    margin-right: 25px
+   }
+
    aside ul {
        height: 80%;
        padding: 0;
@@ -299,6 +345,8 @@ main {
     
    }
 
+  
+
    aside p {
        margin-top: 8px;
        margin-bottom: 8px;
@@ -309,9 +357,10 @@ main {
 
    aside figure {
     height: 100%;
-    width: 100px;
-    border-bottom-left-radius:  20px;
-    border-top-left-radius:   20px;
+    width: 130px;
+    min-width: 130px;
+    border-bottom-left-radius:  30px;
+    border-top-left-radius:   30px;
     margin: 0;
     background-size: cover;
     
@@ -324,7 +373,12 @@ main {
       display: flex;
       justify-content: space-around;
       padding-top: 20px;
+      
   }
+
+  .titre2 .fas {
+    color: black;
+}
 
   .Soleil figure {
       background-image: url(hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
@@ -346,6 +400,10 @@ main {
    color: #0065FC;
 }
 
+.grey {
+    color: #cfcfcf;
+}
+
 
   .titre3 {
       font-weight: bold;
@@ -364,8 +422,13 @@ main {
     padding: 3px;
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
+    filter: drop-shadow(0px 0px 5px rgb(209, 209, 209));
+    
 
+  }
+
+  .Acti li p {
+      margin-left: 10px;
   }
 
   .Acti figure {
@@ -380,19 +443,21 @@ main {
   }
 
   .Acti ul {
-      justify-content: flex-start;
-      width: 80%;
+      justify-content: space-between;
+      width: 100%;
       flex-direction: column;
-      max-height: 700px;
+      height: 500px;
+      max-height: 500px;
+      align-content: space-between;
   }
 .Vieux,.Calanques {
     height: 100%;
 }
 .Pomègues, .Longchamp {
-    height: 60%;
+    height: 55%;
 }
 .Frioul, .Dame {
-    height: 60%;
+    height: 40%;
 }
 .Vieux figure{
     background-image: url(activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
@@ -450,6 +515,22 @@ footer p {
 padding: 10px;
 }
 
+.search button i {
+    display: inline;
+    color: #FFF;
+
+
+}
+.search button span {
+    display: none;
+}
+
+.search button {
+    border-radius: 1em;
+    width: 45px;
+}
+
+
  .filtres {
      display: flex;
      flex-wrap: wrap;
@@ -473,6 +554,7 @@ padding: 10px;
 
  .Acti {
      order: 3;
+     margin: auto;
      
  }
 
@@ -490,6 +572,10 @@ padding: 10px;
 
  .Acti ul {
      padding: 10px;
+     height: auto;
+     max-height: none;
+     margin: auto;
+     width: 100%;
      
  }
 
