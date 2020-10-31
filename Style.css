@@ -119,6 +119,8 @@ main {
         font-family: 'Raleway', Arial, 'Sans Serif';
         font-size: 14px;
         font-weight: bold;
+        position: relative;
+        left: -15px;
            }
 
     .filtres {
@@ -200,6 +202,14 @@ main {
        margin-top: 20px;
        margin-bottom: 40px;
        
+    }
+
+    a, 
+    a:hover,
+    a:active,
+    a:visited {
+        text-decoration: none;
+        color: black;
     }
 
     .hebergements {
@@ -307,8 +317,7 @@ main {
 
     .afficher {
         font-weight: bold;
-        padding-left: 80px;
-        padding-top: 30px;
+        padding: 30px;
     }
 
   aside {
@@ -337,12 +346,16 @@ main {
    aside li {
     background-color: #FFF;
     border-radius: 30px;
-    display: flex;
-    padding: 3px;
     height: 130px;
     width: 80%;
     margin-bottom: 20px;
     
+   }
+
+   aside a {
+    display: flex;
+    padding: 3px;
+    height: 100%;
    }
 
   
@@ -473,7 +486,7 @@ main {
 
 .Frioul figure{
     background-image: url(activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-      height: 200px;
+      height: 132px;
 }
 
 .Calanques figure {
@@ -483,7 +496,7 @@ main {
 
 .Dame figure{
     background-image: url(activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    height: 200px;
+    height: 132px;
 } 
 
 .Longchamp figure{
@@ -576,6 +589,7 @@ padding: 10px;
      max-height: none;
      margin: auto;
      width: 100%;
+     margin-bottom: 30px;
      
  }
 
