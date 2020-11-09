@@ -51,6 +51,10 @@ main {
         
     }
 
+    .topbar nav a.active {
+        color: #0065FC;  
+    }
+
 
     .topbar nav a.inscription {
         color: #0065FC;
@@ -543,9 +547,7 @@ footer p {
 
 @media screen and (max-width: 800px) {
 
- .Reservia {
-     
- }
+
 
 .topbar {
 padding: 10px;
@@ -576,8 +578,12 @@ a.active {
     border-top: 0px;
     color: #0065FC;
     margin: 0;
+    margin-top: 14px;
     
-    
+}
+
+.topbar nav a.Activités {
+    margin: 0;
 }
 
 .Activités {
