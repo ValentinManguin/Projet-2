@@ -550,16 +550,23 @@ footer p {
 padding: 10px;
 }
 
+.Reservia {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+
 nav {
    display: flex;
    position: relative;
+   flex-wrap: wrap;
 
 }
 .active, .Activités {
     width: 50%;
     text-align: center;
     padding:  15px 0px;
-    margin-top: 40px;
+    
+    
 }
 
 a.active {
@@ -576,7 +583,7 @@ a.active {
 
 .inscription {
     position: absolute;
-    top: -50px;
+    top: 0;
     right: 0;
 }
 
@@ -640,6 +647,7 @@ a.active {
  
  aside {
      order: 1;
+     
  }
 
  .Acti ul {
