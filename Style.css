@@ -51,6 +51,7 @@ main {
         
     }
 
+
     .topbar nav a.inscription {
         color: #0065FC;
         font-weight: bold;
@@ -553,6 +554,7 @@ padding: 10px;
 .Reservia {
     flex-wrap: wrap;
     padding-bottom: 0;
+    width: 100%;
 }
 
 nav {
@@ -573,6 +575,7 @@ a.active {
     border-bottom: 2px solid #0065FC;
     border-top: 0px;
     color: #0065FC;
+    margin: 0;
     
     
 }
@@ -580,6 +583,11 @@ a.active {
 .Activités {
     border-bottom: 2px solid  #F2F2F2;
 }
+
+a.Activités {
+    margin: 0;
+}
+
 
 .inscription {
     position: absolute;
@@ -648,6 +656,15 @@ a.active {
  aside {
      order: 1;
      
+ }
+
+ aside figure {
+     width: 100px;
+     min-width: 100px;
+ }
+
+ aside li {
+     width: 100%;
  }
 
  .Acti ul {
